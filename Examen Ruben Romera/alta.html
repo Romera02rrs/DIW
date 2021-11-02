@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rubén Romera">
+    <title>Formulari Pegolí que te ví</title>
+</head>
+<body style="margin: 3%; font-family:'JetBrains Mono', 'monospace', 'Arial';">
+    <h1>Formulario - Rubén Romera</h1>
+    <form method="post" action="processar_info.php">
+        <fieldset>
+            <legend>Información básica</legend><br>
+            <div>
+                <label for="login">login</label><br>
+                <input type="text" id="login" name="login" placeholder="Introduzca su usuario:" value="" maxlength="10" required>
+            </div><br>
+            <div>
+                <label for="clave">Contraseña</label><br>
+                <input type="password" id="clave" name="clave" placeholder="De 8 a 10 caracteres:" value="" minlength="8" maxlength="10" autofocus required>
+            </div><br>
+            <div>
+                <label>Correo Electrónico</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Introduzca su correo:" value="" maxlength="20" required>    
+            </div><br>
+            <div>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre:" value="" maxlength="40" required>
+            </div><br>
+            <div>
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Introduzca sus apellidos:" value="" maxlength="40" required>
+            </div><br>
+            <div>
+                <label for="fecha">Fecha de nacimiento</label><br>
+                <input type="date" id="fecha" name="fecha" placeholder="Introduzca su fecha de nacimiento:" value="" step="1" min="1900-01-01" max="2021-12-31">
+            </div><br>
+            <div>
+                <label for="DNI">DNI</label><br>
+                <input type="text" id="DNI" name="DNI" placeholder="Introduzca su DNI:" value="" maxlength="9" required>
+            </div><br>
+            <div>
+                <label for="mas">Sexo</label><br>
+                <label for="mas">Maculino</label>
+                <input type="radio" id="mas" name="sexo"value="1"><br>
+                <label for="fem">Femenino</label>
+                <input type="radio" id="fem" name="sexo"value="2" checked>
+            </div><br>
+            <div>
+                <label for="url">URL</label><br>
+                <input type="url" id="url" name="url" placeholder="&#34;http://www.pujabaixaitocalamarraixa.es\&#34;" value="" maxlength="40" pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?">
+            </div>
+        </fieldset><br>
+        <fieldset>
+            <legend>Dirección</legend><br>
+            <div>
+                <label for="calle">Calle y número</label><br>
+                <input type="text" id="calle" name="calle" placeholder="Ejemplo: &#34;Sertori20&#34;" value="" maxlength="40" pattern="[A-Za-z]{1,40}[0-9]{1,40}">
+            </div><br>
+            <div>
+                <label for="poblacion">Población</label><br>
+                <input type="text" id="poblacion" name="poblacion" placeholder="Introduzca su poblacion:" value="" maxlength="40">
+            </div><br>
+            <div>
+                <label for="provincia">Provincia</label><br>
+                <select>
+                    <option value="1">Valencia</option>
+                    <option value="2" selected>Alicante</option>
+                    <option value="3">Castellón</option>
+                    <option value="4">Barcelona</option>
+                </select>
+            </div><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Macotas</legend><br>
+            <div>
+                <label>Macotes</label><br><br>
+                <label for="gato">Gato</label>
+                <input type="checkbox" name="mascotas" id="gato" value="Gato"><br>
+                <label for="perro">Perro</label>
+                <input type="checkbox" name="mascotas" id="perro" value="Perro" checked><br>
+                <label for="canario">Canario</label>
+                <input type="checkbox" name="mascotas" id="canario" value="Canario"><br>
+                <label for="hamster">Hámster</label>
+                <input type="checkbox" name="mascotas" id="hamster" value="Hámster">
+            </div><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Información adicional</legend><br>
+            <div>
+                <label for="color">Color Preferido</label><br>
+                <input type="text" id="color" name="color" placeholder="Introduzca su color favorito:" value="" maxlength="7">
+            </div><br>
+            <div>
+                <label for="hora">Hora a la que te levantas</label><br>
+                <input type="text" id="hora" name="hora" placeholder="hh:mm" value="" maxlength="5" pattern="[0-9]{2}[:]{1}[0-9]{2}">
+            </div><br>
+            <div>
+                <label for="fihero">Fichero</label><br>
+                <input type="file" id="fichero" name="fichero" accept="application/pdf" multiple>
+            </div><br>
+            <div>
+                <label for="observaciones">Observaciones</label><br>
+                <textarea name="observaciones" id="observaciones" placeholder="Introduzca sus observaciones en el caso de que las tenga:" cols="40" rows="5" maxlength="2048"></textarea>
+            </div><br>
+        </fieldset><br>
+            <input type="reset" name="borrar" id="borrar" value="Borrar">
+            <input type="submit" name="enviar" id="enviar" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
