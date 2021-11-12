@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD5ACT1</title>
+</head>
+<body>
+    <img src="play.jpg" alt="play" id="playImg" height="250">
+    <img src="pause.png" alt="pause" id="pauseImg" height="200">
+    <audio id="sonido">
+        <source src="mix_03s (audio-joiner.com).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.getElementById("playImg").addEventListener("click", reproducir);
+        document.getElementById("pauseImg").addEventListener("click", pausar);
+
+        sonido = document.getElementById("sonido");
+
+        function reproducir(){
+            sonido.play();
+        }
+        function pausar(){
+            sonido.pause();
+        }
+    </script>
+</body>
+</html>

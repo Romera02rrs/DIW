@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD5ACT1online</title>
+</head>
+<body style="margin: 3%;">
+    <img src="img/play.png" alt="play" id="playImg" height="150">
+    <img src="img/mute.png" alt="pause" id="muteImg" height="150">
+    <audio id="sonido">
+        <source src="https://freepd.com/music/Ambush%20in%20Rattlesnake%20Gulch.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        playImg = document.getElementById("playImg");
+        playImg.addEventListener("click", reproduce);
+
+        muteImg = document.getElementById("muteImg");
+        muteImg.addEventListener("click", mutear);
+
+        sonido = document.getElementById("sonido");
+
+        var reproducido = false;
+        var muteado = false;
+
+        function reproduce(){
+            if(reproducido == fasle){
+                sonido.play();
+                reproducido = true;
+                playImg.setAttribute("src", "img/play.png");
+            }else{
+                sonido.pause();
+                reproducido = false;
+                playImg.setAttribute("src", "img/pause.png");
+            }
+
+        }
+        function mutear(){
+            if(muteado == false){
+                sonido.muted = true;
+                muteado = true;
+                muteImg.setAttribute("src", "img/mute.png");
+            }else{
+                sonido.muted = false;
+                muteado = false;
+                muteImg.setAttribute("src", "img/sound.png");
+            }
+            
+        }
+    </script>
+</body>
+</html>
