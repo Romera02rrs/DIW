@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box ;
+}
+
+body{
+    background-color:  gray;
+}
+
+p {
+    background-color: cadetblue;
+    display: inline;
+}
+
+body div:first-child{
+    background-color: aqua;
+    width: 50;
+    height: 50vw ;
+}
+
+body div:last-child{
+    background-color: red;
+    margin-top: 500px;
+    width: 100vw;
+    height: 100vw;
+}
