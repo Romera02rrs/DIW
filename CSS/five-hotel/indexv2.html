@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Five Hotel</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-capitalize main-font-family">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="#" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="show-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#room">Suits</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Informació
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Enllaç1</a>
+                                <a class="dropdown-item" href="#">Enllaç2</a>
+                                <a class="dropdown-item" href="#">Enllaç3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Alguna cosa més</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contactar</a>
+                        </li>
+                        <li class="nav-item book d-flex align-items-center">
+                            <a class="nav-link" href="#">Reservar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header id="home">
+            <div class="small-container">
+                <form class="main-font-family text-center">
+                    <input type="search">
+                    <i class="fas fa-search"></i>
+                    <input type="submit" value="Buscar">
+                </form>
+                <div class="row">
+                    <div class="col-lg-4 col-12 lobster-font-family d-flex align-items-center">
+                        <h2>Establiment molt apreciat per les luxoses vistes a Oliva Nova</h2>
+                        <button><a href="#">Sobre l'hotel</a></button>
+                    </div>
+                </div>
+                <div class="h-slider roboto-font-family welcome d-flex align-items-center justify-content-center">
+                    <h1 class="text-capitalize">Benvingut a <br><span>five hotel</span></h1>
+                    <div id="headerslider" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item carousel-three active"></div>
+                        <div class="carousel-item carousel-two"></div>
+                        <div class="carousel-item carousel-one"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+                        <i class="fas fa-angle-double-left"></i>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="sr-only">Pròxim</span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="st-rec"></div>
+            <div class="rd-rec"></div>
+        </header>
+        
+        <div class="about lobster-font-family">
+            <div class="container">
+                <h2 class="text-center text-capitalize">Sobre l'hotel</h2>
+                <img src="imgs/shape.png">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4>El millor lloc per a gaudir del relax</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, pariatur eos architecto nam voluptas aspernatur dolore corrupti dolores! Modi doloribus sint iusto quae architecto hic facilis magnam et, dolore fuga! </p>
+                        <button><a href="#">Llegir més</a></button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <h2 class="text-capitalize" id="room">Habitacions & Suits</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="img"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="block">
+                            <div>
+                                <img src="imgs/shape.png">
+                                <strong>405€</strong>
+                                <h5>Habitacions luxoxes</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsa magnam fuga labore, nisi reprehenderit et eius consectetur hic placeat, unde, ab ipsam facere esse doloremque sunt tempore deserunt nostrum!</p>
+                                <button><a href="#" class="text-capitalize">Llegir més</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery lobster-font-family" id="blog">
+            <div class="container">
+                <h2 class="text-calitalize text-center">Galeria</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pic-one"><h4>Piscina</h4></div>
+                        <div class="pic-two"><h4>Vora mar</h4></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pic-three active"><h4>Yoga</h4></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pic-four"><h4>Comedor romàntic</h4></div>
+                        <div class="pic-five"><h4>Bones vistes</h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider main-font-family">
+            <h2 class="text-center text-capitalize main-font-family">Què diuen els nostres clients?</h2>
+          <div id="slideToNext" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slideToNext" data-slide-to="0" class="active"></li>
+              <li data-target="#slideToNext" data-slide-to="1"></li>
+              <li data-target="#slideToNext" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>Donald Trump</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque expedita quae illo iusto officia quam quaerat, accusamus consequuntur fuga officiis inventore quidem, numquam facere sed optio neque. Earum, nihil quaerat.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>Joe Biden</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia vero doloribus libero excepturi tempore tempora repudiandae? Molestias dicta repudiandae autem, ipsam, reprehenderit nihil, alias laborum quos voluptatem delectus assumenda maiores.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>Pep Malacara</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae nam aliquid nulla, ipsam modi unde quis sit explicabo necessitatibus ex cum harum corrupti repellat odio accusantium impedit laboriosam quae!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact main-font-family text-center">
+            <div class="container">
+                <h2 id="contact">Estem en contacte</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="contact-form">
+                            <form>
+                                <input type="text" placeholder="Nom">
+                                <input type="email" placeholder="Email">
+                                <input type="text" placeholder="Telèfon">
+                                <textarea placeholder="Missatge"></textarea>
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-right">Reserva les teues vacances i gaudeix dels millors tractaments relaxants</h2>
+                        <img src="imgs/shape.png">
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <!-- CÓDIGO IMPLEMENTADO -->
+
+        <div id="galletas">
+            <img id="cookieImg" src="imgs/cookie_monster.JPG" alt="COOKIEMOSTER" width="100px" height="100px">
+            <p id="parrafoCookie">Esta web utiliza cookies. Si lo deseas, puedes leer mas sobre como y que datos gestionamos.
+                <a href="#"><span class="link-cookieMonster">¡Saber mas!</span></a>&nbsp;&nbsp;&nbsp;<a href="#" id="cerrar"><span class="link-cookieMonster">Cerrar</span></p></a>
+        </div>
+
+        <!-- CÓDIGO IMPLEMENTADO -->
+
+        <footer class="noto-font-family">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Enllaços útils</h3>
+                            <ul class="text-capitalize">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Habitacions</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contactar</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Ubicació</h3>
+                            <p>C/ de Dalt, 176,<br>
+                                03780 Pego, Alacant, ES<br>
+                                (+34) 96 654 3210<br>
+                                (+34) 96 654 3211<br>
+                                hotelspego@gmail.com
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 form">
+                            <h3>Newsletter</h3>
+                            <form>
+                                <input type="email" placeholder="Email">
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+        </script>
+        <!-- CÓDIGO IMPLEMENTADO -->
+        
+        <script>
+            $("#cerrar").click(function() {
+                $("#galletas").hide(1500);
+            });
+        </script>
+
+        <!-- CÓDIGO IMPLEMENTADO -->
+    </body>
+</html>
