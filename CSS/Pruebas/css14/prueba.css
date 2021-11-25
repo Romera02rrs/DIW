@@ -5,24 +5,26 @@
     box-sizing: border-box ;
 }
 
-body{
-    background-color:  gray;
+.clase1{
+    color: red;
 }
 
-p {
-    background-color: cadetblue;
+.clase2{
+    font-size: 100px;
+}
+
+.clase3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clase4{
+    background-color: black;
+}
+
+.clase5{
     display: inline;
 }
 
-body div:first-child{
-    background-color: aqua;
-    width: 50;
-    height: 50vw ;
-}
-
-body div:last-child{
-    background-color: red;
-    margin-top: 500px;
-    width: 100vw;
-    height: 100vw;
+.clase5{
+    
 }
