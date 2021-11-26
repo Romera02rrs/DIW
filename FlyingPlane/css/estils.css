@@ -1,0 +1,25 @@
+#avio {
+  /* açò caldrà llevar-ho al posar els teus estils, però per a que veges
+  on està en la pantalla ho he posat amb un color i li he donat un tamanys inicial*/
+  background-image: url(../img/Avion01.png);
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  position: relative;
+  border: solid 1px red;
+}
+
+body{
+  background-image: url(../fons_nivells/nivell1.jpg);
+  background-repeat: no-repeat;
+  min-width: 1250px;
+  min-height: 584;
+  overflow-wrap: normal;
+}
+
+.marcador{
+
+  background-image: url(../img/);
+}
