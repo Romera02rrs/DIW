@@ -1,25 +1,81 @@
-#avio {
-  /* açò caldrà llevar-ho al posar els teus estils, però per a que veges
-  on està en la pantalla ho he posat amb un color i li he donat un tamanys inicial*/
-  background-image: url(../img/Avion01.png);
-  display: inline-block;
-  height: 200px;
-  width: 300px;
-  background-size: 100px;
+body{
+
+  background-image: url(../fons_nivells/nivell1.jpg);
   background-repeat: no-repeat;
+  width: 1250px;
+  height: 584px;
+  overflow-wrap: normal;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+div#avio {
+
+  
+  background-image: url(../img/Avion01.png);
+
+  height: 60px;
+  width: 122px;
+
+  background-size: 120px;
+  background-repeat: no-repeat;
+
   position: relative;
   border: solid 1px red;
 }
 
-body{
-  background-image: url(../fons_nivells/nivell1.jpg);
-  background-repeat: no-repeat;
-  min-width: 1250px;
-  min-height: 584;
-  overflow-wrap: normal;
-}
-
 .marcador{
 
-  background-image: url(../img/);
+  display: flex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-right: 68px;
+  margin-top: 10px;
+  width: 138px;
+  height: 70px;
+  filter: opacity(50%);
+  background-color: #97a5bb;
+  border: 2px solid #b7c5da;
+  border-radius: 10px;
+}
+
+.marcador::before{
+
+  position: relative;
+  text-align: center;
+  content: "100 pt";
+}
+
+footer{
+
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 80px;
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.botonesFooter{
+
+  border: solid #6995ac 1px;
+
+  color: white;
+
+  background-color: #55b0ce73;
+
+  margin-top: 13px;
+
+  text-align: center;
+
+  height: 55px;
+  width: 120px;
+
+  border-radius: 40px ;
 }
