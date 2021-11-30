@@ -1,101 +1,100 @@
-//Aquesta constant simbolitza la velocitat.
-//Realment és el número de píxels que ens movem
-//en la pantalla quan prémem una de les tecles de
-//moviment
 const pixels_a_moure = 15;
 
-function moureEsquerra() {
-  let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  getAvioPos(element)
-  //i el mourem "pixels_a_moure" píxels cap a l'esquerra.
-  //Ex:
-  getAvioPos(element).left // torna la posició de l'eix X de l'avió
-  getAvioPos(element).top // torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
+function moureAmunt() {
 
-  console.log("Volem moure l'avió a l'esquerra");
+  /**
+   * Obtenemos el id del Avión.
+   */
+  let element = document.getElementById("avio");
+  /**
+   * Obtenemos la posición Actual del Avión.
+   */
+  let posActual = getAvioPos(element).top;
+  /**
+   * Comprobamos que el Avión no se salga de la pantalla.
+   */
+  if(compruebaPosicionAmuntEsquerra(posActual)){
+    /**
+     * Creamos la nueva posición sumandole los pixeles.
+     */
+    let nuevaPos = posActual - pixels_a_moure;
+    /**
+      * Establecemos la nueva posición al Avión.
+      */
+    element.style.top = nuevaPos+"px";
+  }
 }
 
 function moureDreta() {
-  let element = document.getElementById("avio_img");
-  //ací agafarem la posició actual on estiga l'avió amb
-  let pos = getAvioPos(element);
 
-  console.log(pos);
-
-  //i el mourem "pixels_a_moure" píxels cap a la dreta.
-  //Ex:
-  getAvioPos(element).left // torna la posició de l'eix X de l'avió
-  getAvioPos(element).top // torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-
-  // element.setAttribute("style", "left:"+(pos.left+pixels_a_moure)+"px"+"");
-
-  pos.left += pixels_a_moure;
-
-  console.log(pos);
-
-  element.style.position="relative";
-  element.style.left= pos.left +"px";
-
-  console.log("Volem moure l'avió a la dreta");
-}
-
-function moureAmunt() {
   let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element)
-  //i el mourem "pixels_a_moure" píxels cap amunt.
-  //Ex:
-  //   getAvioPos(element).left torna la posició de l'eix X de l'avió
-  //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-  console.log("Volem moure l'avió a amunt");
+  let posActual = getAvioPos(element).left;
+  if(compruebaPosicionDreta(posActual)){
+    let nuevaPos = posActual + pixels_a_moure;
+    element.style.left = nuevaPos+"px";
+    element.style.transform = "scaleX(1)";
+  }
 }
 
 function moureAvall() {
+
   let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element)
-  //i el mourem "pixels_a_moure" píxels cap avall.
-  //Ex:
-  //   getAvioPos(element).left torna la posició de l'eix X de l'avió
-  //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-  console.log("Volem moure l'avió a la avall");
+  let posActual = getAvioPos(element).top;
+  if(compruebaPosicionAbaix(posActual)){
+    let nuevaPos = posActual + pixels_a_moure;
+    element.style.top = nuevaPos+"px";
+  }
+}
+
+function moureEsquerra() {
+
+  let element = document.getElementById("avio");
+  let posActual = getAvioPos(element).left;
+  if(compruebaPosicionAmuntEsquerra(posActual)){
+    let nuevaPos = posActual - pixels_a_moure;
+    element.style.left = nuevaPos+"px";
+    element.style.transform = "scaleX(-1)";
+  }
+  
+}
+
+function compruebaPosicionAmuntEsquerra(posActual){
+
+  let altura = 0;
+  if(posActual <= altura){
+    return false;
+  }else{
+    return true;
+  }
+}
+
+function compruebaPosicionDreta(posActual){
+
+  let altura = window.screen.width - 150;
+  if(posActual >= altura){
+    return false;
+  }else{
+    return true;
+  }
+}
+
+function compruebaPosicionAbaix(posActual){
+
+  let altura = window.screen.height - 75;
+  if(posActual >= altura){
+    return false;
+  }else{
+    return true;
+  }
 }
 
 function passarANumero(n) {
+
   return parseInt(n == "auto" ? 0 : n);
 }
 
-/**
- * Aquesta funció en torna una objecte amb la posició actual de l'avió a la pantalla
- * return obj.left --> posició de l'avió de l'eix X
- *        obj.top --> posició de l'avió de l'eix Y
- */
 function getAvioPos() {
+
   let obj = {
     left: passarANumero(getComputedStyle(avio).left),
     top: passarANumero(getComputedStyle(avio).top),
@@ -103,44 +102,82 @@ function getAvioPos() {
   return obj;
 }
 
-/**
- * Funció encarregada de controlar quina tecla s'ha "apretat"
- * @param {*} evt: event que es llança
- */
 function moureAvio(evt) {
+  
+  cambiaImagen();
+  reproduceAudio();
+
   switch (evt.keyCode) {
     case 37:
-      /** hem apretat la tecla de fletxa esquerra */
+      
       moureEsquerra();
       break;
     case 39:
-      /** hem apretat la tecla de fletxa dreta */
+
       moureDreta();
       break;
     case 38:
-      /** hem apretat la tecla de fletxa amunt */
+
       moureAmunt();
       break;
     case 40:
-      /** hem apretat la tecla de fletxa avall */
+
       moureAvall();
       break;
-    //************** per completar per l'alumne *******/
-    //                   todo                         */
-    //*************************************************/
-    //mira quina tecla és el valor 1 el teclat i fes
-    //que la música s'active o es desactive segons estava
-    //abans activada o no activada
+    case 49:
+
+      audio();
+    break;
   }
 }
-/**
- * Funció encarregada de fer el que calga quan es pare l'avió
- */
-function pararAvio() {
-  console.log("parem l'avió");
+
+function cambiaImagen(){
+  element = document.getElementById("avio");
+  element.style.backgroundImage = "url('img/Avion_Fuego.png')";
+  element.style.backgroundSize = "120px";
+}
+
+function pararAvion() {
+  element = document.getElementById("avio");
+  element.style.backgroundImage = "url('img/Avion01.png')";
+  element.style.backgroundSize = "87px";
+
+  paraAudio();
 }
 
 function docReady() {
+
   window.addEventListener("keydown", moureAvio);
-  window.addEventListener("keyup", pararAvio);
+  window.addEventListener("keyup", pararAvion);
+  document.getElementById("btn1").addEventListener("click", foto1);
+  document.getElementById("btn2").addEventListener("click", foto2);
+}
+
+
+function foto1(){
+  document.body.style.backgroundImage = "url('fons_nivells/nivell1.jpg')";
+}
+
+function foto2(){
+  document.body.style.backgroundImage = "url('fons_nivells/nivell2.jpg')";
+}
+
+function audio(){
+  let reproductor = document.getElementById("audio");
+
+  if(reproductor.paused){
+    reproductor.play();
+  } else {
+    reproductor.pause();
+  }
+}
+
+function reproduceAudio(){
+  let reproductor = document.getElementById("mou");
+  reproductor.play();
+}
+
+function paraAudio(){
+  let reproductor = document.getElementById("mou");
+  reproductor.pause();
 }

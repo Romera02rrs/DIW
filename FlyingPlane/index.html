@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Javi Signes" />
     <title>Red Plane</title>
+    <script src="https://kit.fontawesome.com/48a8c10619.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/estils.css" />
 </head>
@@ -19,11 +20,28 @@
         <div id="avio">
         </div>
     </main>
+
+    <div id="modal2" class="modalmask">
+        <div class="modalbox rotate">
+            <a href="#close" title="Close" class="close">X</a>
+            <h1 id="Ajuda">AJUDA</h1>
+            <p><i class="fas fa-arrow-left"></i> Esquerre</p>
+            <p><i class="fas fa-arrow-right"></i> Dreta</p>
+            <p><i class="fas fa-arrow-up"></i> Amunt</p>
+            <p><i class="fas fa-arrow-down"></i> Avall</p>
+            <p><i class="fas fa-arrow-down"></i> Avall</p>
+            <p><span>1</span>: Parar/Activar so</p>
+        </div>
+    </div>
+
     <footer>
-        <button class="botonesFooter" id="btnAjuda">Ajuda</button>
+        <a id="ajuda" href="#modal2"><button class="botonesFooter" id="btnAjuda">Ajuda</button></a>
         <button class="botonesFooter" id="btn1">Nivell 1</button>
         <button class="botonesFooter" id="btn2">Nivell 2</button>
     </footer>
+
+    <audio src="audio/musica_fons.mp3" loop autoplay id="audio"></audio>
+    <audio src="audio/avio_es_mou.mp3" id="mou"></audio>
 </body>
 
 </html>
