@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
+h1{
+    font-weight: normal;
+ }
 
 .border{
     border:2px solid red;
@@ -13,11 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.menu{
-    color: white;
-    background-color: black;
+    text-align: center;
 }
 
 .icon{
@@ -25,19 +25,63 @@
     height: auto;
 }
 
-.banda-1{
+/* MENU */
 
+.menu{
+    color: white;
+    background-color: black;
+}
+
+/* BANDA 1 */
+
+.banda-1 {
+
+    padding-top: 100px;
     background-image: url(../img/confeti.svg), radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% ) ;
     background-repeat: no-repeat;
     color: white;
+    padding-bottom: ;
 }
 
-.recuadro{
-    background-image: linear-gradient( 153deg, #e64c4c 0%, #fb8332 95%);
+.banda-1 h1{
+
+    font-size: 50px;
+    padding: 40px;
+}
+
+.banda-1 p:first-child {
+    
+    max-width: 800px;
+    flex-wrap: wrap;
+    padding: 30px;
+    line-height : 25px;
+    font-size: 25px;
+}
+
+.recuadro {
+    padding: 60px;
     border-radius: 10px;
 }
 
-.recuadro-2{
+#naranja{
+    width: 200px;
+}
+
+.recuadro h2 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.recuadro img {
+    float: left;
+}
+
+.recuadro-1 { 
+    background-image: linear-gradient( 153deg, #e64c4c 0%, #fb8332 95%);
+}
+
+.recuadro-2 {
     background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
     border-radius: 10px;
 }
