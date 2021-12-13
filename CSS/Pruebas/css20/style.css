@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    color: #bbbaaa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.container {
+    display: grid;
+}
+
+.item {
+    border: 1px solid coral;
+    padding: 0.5em;
+}
