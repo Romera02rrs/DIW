@@ -1,0 +1,330 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header ul {
+    list-style: none;
+}
+
+.naranja{
+    color: #ce5404;
+}
+
+.amarillo{
+    color: #c59000;
+}
+
+.rojo{
+    color: #e86262;
+}
+
+.fondo{
+    padding: 2px;
+    background-color: #0003;
+    border-radius: 4px;
+}
+
+header{
+    /* position: fixed; */
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+header img {
+    height: 30px;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+}
+
+[class*="lista-"] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.lista-0 {
+  
+}
+
+.lista-1{
+    justify-content: right;
+}
+
+.lista-2{
+   
+}
+
+.lista-3{
+
+}
+
+.lista-4{
+    
+}
+
+.lista-5{
+    
+}
+
+.lista-6{
+    
+}
+
+/** --------- SECCIÓN 1 -------------- */
+
+.seccion-1{
+    background-repeat: no-repeat;
+    background-size: 130%;
+    height: 985px;
+    padding-top: 100px;
+    background-image: url("img/confeti.svg"), radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% ) ;
+    color: white;
+}
+
+.seccion-1 .titulo{
+    justify-content: center;
+    padding-top: 35px;
+    font-size: 40px;
+}
+
+.seccion-1 h1 {
+    font-weight: 500;
+    letter-spacing: 1pt; 
+}
+
+.seccion-1 .descripcion {
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.seccion-1 h2 {
+    line-height: 26pt;
+    font-weight: 350;
+    letter-spacing: 1pt;
+    text-align: center;
+}
+
+[class*="recuadro-"] {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 30%;
+    margin-top: 19px;
+    background-color: black;
+    height: 335px;
+    border-radius: 7px;
+    
+}
+
+[class*="recuadro-"] img {
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.recuadro-1 {
+    background-image: linear-gradient( 153deg, #e64c4c 0%, #fb8332 95%);
+    margin-left: 45px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.recuadro-2 {
+    background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
+    margin-left: 10px;
+    width: 100%;
+    margin-right: 45px;
+}
+
+[class*="recuadro-"] h3 {
+    margin-top: 35px;
+    letter-spacing: 1.5pt;
+    font-size: 40px;
+    font-weight: 200;
+    margin-left: 15px;
+}
+
+[class*="recuadro-"] p {
+    width: 70%;
+    flex: 100%;
+    height: 48px;
+    margin-top: -30px;
+    margin-left: 80px;
+    line-height: 18pt;
+    letter-spacing: 1pt;
+}
+
+[class*="recuadro-"] a {
+   margin-top: 70px;
+   margin-left: 80px;
+
+}
+
+.tresApps {
+    justify-content: center;
+}
+
+[class*="item-"] {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+[class*="item-"] img{
+    height: 48px;
+    width: 48px;
+}
+
+[class*="item-"] h4{
+    margin-top: 20px;
+   font-size: 25px;
+   font-weight: 300;
+   letter-spacing: 1.5pt;
+}
+
+[class*="item-"] p{
+    margin-top: 20px;
+    letter-spacing: 0.5pt;
+}
+
+.item-1{
+    padding-left: 60px;
+}
+
+.item-3{
+    padding-right: 60px;
+}
+
+/** --------- SECCIÓN 2 -------------- */
+
+.seccion-2{
+    background-color: white;
+    height: 1262px;
+}
+
+.seccion-2 .titulo {
+    justify-content: center;
+}
+
+.seccion-2 h1{
+    padding-top: 108px;
+    font-size: 40px;
+}
+
+.seccion-2 h2{
+    padding-top: 45px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 235px;
+    letter-spacing: 0.5pt;
+}
+
+.seccion-2 .uno p, .seccion-2 .dos p{
+    padding-top: 20px;
+    margin-left: 235px;
+    line-height: 20pt;
+    letter-spacing: 0.3pt;
+}
+
+.seccion-2 ol{
+    margin-left: 275px;
+    line-height: 20pt;
+    letter-spacing: 0.3pt;
+}
+
+.seccion-2 ol img{
+    margin-top: 20px;
+}
+
+.seccion-2 .codigo {
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 235px;
+    margin-right: 235px;
+    background-color: #f6f7f8;
+    border-radius: 5px;
+    letter-spacing: 1pt;
+    line-height: 15pt;
+    border: 0.5px solid #0001;
+}
+
+.publicarLaWeb h2{
+    margin-top: 30px;
+}
+
+.publicarLaWeb p{
+    margin-top: -5px;
+    letter-spacing: 1pt;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+.seccion-2 .recuadro p {
+    letter-spacing: 0.1pt;
+    margin-top: 50px;
+    height: 65px;
+    width: 730px;
+    border: 0.5px solid #0001;
+}
+
+/** --------- SECCIÓN 3 -------------- */
+
+.seccion-3 {
+    background-color: #151617;
+    height: 396px;
+    text-align: center;
+    color: white;
+}
+
+.seccion-3 .centrado{
+    justify-content: center;
+}
+
+.seccion-3 h1{
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: 450;
+    letter-spacing: -3.5px;
+    line-height: 50px;
+}
+
+.seccion-3 p{
+    margin-top: 35px;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+}
+
+/** --------- SECCIÓN 4 -------------- */
+
+.seccion-4 .titulo {
+    margin-top: 103px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.seccion-4 .titulo h2 {
+    font-weight: 450;
+    letter-spacing: -1px;
+}
+
+.seccion-4 .tresApps {
+    margin-top: -15px;
+}
+
+/** ---------- FOOTER --------------- */
+
+footer{
+    margin-top: 30px;
+}

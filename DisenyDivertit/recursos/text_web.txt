@@ -1,8 +1,7 @@
 2onDAW-DI
 Serveis Assistència API Comunitat Xat
 Creem dissenys divertits
-Aquesta página web té molts elements. En ella podem veure des de gradients amb fons, icones, transicions, mescles de color, tipografies i moltes coses més!
-Plug-ins
+Aquesta página web té molts elements. En ella podem veure des de gradients amb fons, icones, transicions, mescles de color, tipografies i moltes coses més!Plug-ins
 
 Amplia la funcionalitat del teu Visual Studio Code mitjançant noves formes personals i la utilització de generadors automàtics de codi per a fer plantilles web apropiades al nivell d'un alumne de 2on de DAW.
 
