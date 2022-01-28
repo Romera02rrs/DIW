@@ -6,14 +6,11 @@ body {
     background-attachment: fixed;
 }
 
-.uno{
-    height: 300px;
-    background-color: black;
-    z-index: 9;
+.contenedor{
+    /*background-color: aliceblue;*/
+   
 }
 
-.dos{
-    height: 300px;
-    background-color: blue;
-    z-index: 2;
+.contenido{
+    
 }
