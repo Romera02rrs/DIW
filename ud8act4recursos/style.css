@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'HindVadodara-Regular';
+    src: url('Hind_Vadodara/HindVadodara-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'HindVadodara-Regular' !important ;
+}
+
+.menu {
+    height: 100%;
+}
+
+.perfilImg{
+    width: 118px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    box-shadow: -7px 0px 6px 0px #0002;
+    height: 85px;
+}
