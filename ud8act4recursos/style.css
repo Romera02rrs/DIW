@@ -11,6 +11,10 @@
     font-family: 'HindVadodara-Regular' !important ;
 }
 
+.contenedor {
+    background-color: #d1d9df;
+}
+
 .menu {
     height: 100%;
 }
@@ -25,4 +29,5 @@
 .title{
     box-shadow: -7px 0px 6px 0px #0002;
     height: 85px;
+    letter-spacing: 0.1pt;
 }
